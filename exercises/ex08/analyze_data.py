@@ -35,6 +35,3 @@ name_and_count: DataFrame = df.head(10).select(["name", "count"])
 names_2020: DataFrame = df.filter_by_col_value("year", "2020")
 # names_2020.tabulate()
 
-""" 2.5 From the people born in 2020, get top 10 most popular names. """
-top_10: DataFrame = names_2020.filter_by_rank("count", 10)
-# top_10.tabulate()
