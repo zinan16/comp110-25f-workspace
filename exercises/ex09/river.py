@@ -1,24 +1,12 @@
 """File to define River class."""
 
-from ex07.fish import Fish
-from ex07.bear import Bear
+from ex09.fish import Fish
+from ex09.bear import Bear
 
 class River:
     
-    day: int
-    fish: list[Fish]
-    bears: list[Bear]
-    
     def __init__(self, num_fish: int, num_bears:int):
         """New River with num_fish Fish and num_bears Bears"""
-        self.day: int = 0
-        self.fish: list[Fish] = []
-        self.bears: list[Bear] = []
-        # populate the river with fish and bears
-        for _ in range(0, num_fish):
-            self.fish.append(Fish())
-        for _ in range(0, num_bears):
-            self.bears.append(Bear())
 
     def check_ages(self):
         return None
