@@ -5,10 +5,6 @@ from ex07.bear import Bear
 
 class River:
     
-    day: int
-    fish: list[Fish]
-    bears: list[Bear]
-    
     def __init__(self, num_fish: int, num_bears:int):
         """New River with num_fish Fish and num_bears Bears"""
         self.day: int = 0
