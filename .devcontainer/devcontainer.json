@@ -7,7 +7,7 @@ This file contains configuration settings for your VSCode Development Container.
 It ensures everyone's VSCode is setup properly for success in the course.
 */
 {
-    "name": "comp110-24f",
+    "name": "comp110-25s",
     "image": "krisjordan/trailhead:0.2.1",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
@@ -63,6 +63,6 @@ It ensures everyone's VSCode is setup properly for success in the course.
     },
     "runArgs": [
         "--name",
-        "comp110-24f"
+        "comp110-25s"
     ]
 }
