@@ -23,5 +23,3 @@ class DataFrame:
 
     def filter_by_col_value(self, column_name: str, col_value: str) -> DataFrame:
         return DataFrame({})
-
-    
