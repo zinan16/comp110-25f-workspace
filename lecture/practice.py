@@ -180,3 +180,68 @@ def lp2(n: int)->int:
     return int(number/2)
 
 lp2(n=17)  # should return 16
+
+my_numbers: list[float] = list()
+my_numbers: list[float] = [1, 2, 3]
+
+my_numbers.append(1.5)
+
+print(my_numbers)
+
+game_point: list[int] = [102, 86, 94]
+
+print(game_point)
+
+game_point[1] = 72
+
+print(game_point)
+
+game_point.pop(1)
+
+print(game_point)
+
+game_point.append(102)
+
+print(game_point)
+
+def contains(needle: int, haystack: list[int]) -> bool:
+    index: int = 0
+    while index<len(haystack):
+        if haystack[index]==needle:
+            return True
+        index+=1
+    return False
+
+print(contains(3, [1, 2, 3, 4, 5]))  # should return True
+
+def gen(n: int) -> list[int]:
+    result: list[int] = []
+    i: int = 0
+    while i < n:
+        result.append(i)
+        i += 1
+    return result
+
+print(gen(5))  # should return [0, 1, 2, 3, 4]
+
+ice_cream: dict[str, int] = {"chocolate": 12, "vanilla": 10, "strawberry": 5}
+
+ice_cream["mint"] = 3
+print(ice_cream)
+
+ice_cream["vanilla"] = 7
+print(ice_cream)
+
+for flavor in ice_cream:
+    print(f"{flavor} has {ice_cream[flavor]} orders")
+
+if "mint" in ice_cream:
+    print(f"we have {ice_cream["mint"]} orders of mint ice cream")
+
+my_list: list[str] = ["w", "x", "y", "z"]
+           
+for index in my_list:
+    print(index)
+
+for index in range(0, len(my_list)):
+    print(index)
